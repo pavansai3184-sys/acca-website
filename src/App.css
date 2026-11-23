@@ -1,0 +1,261 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.section-padding {
+  padding: 75px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #22205c;
+  margin-bottom: 15px;
+}
+
+/* Hero */
+
+.hero-section {
+  background: linear-gradient(120deg, #211c63, #5146a8);
+  color: white;
+  padding: 100px 0;
+}
+
+.hero-section h1 span {
+  color: #ffc857;
+}
+
+.hero-card {
+  background: white;
+  color: #22205c;
+  border-radius: 20px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.hero-card h2 {
+  font-size: 48px;
+  color: #6552c7;
+  font-weight: bold;
+}
+
+.hero-circle {
+  width: 110px;
+  height: 110px;
+  background: #6552c7;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Why Choose Us */
+
+.feature-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 30px 20px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+/* Eligibility */
+
+.eligibility-section {
+  background: #f5f4fc;
+}
+
+.eligibility-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.eligibility-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.eligibility-item p {
+  margin: 0;
+}
+
+.check-icon {
+  color: #fff;
+  background: #6552c7;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Learning */
+
+.subject-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 25px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.subject-card:hover {
+  background: #f5f4fc;
+  border-color: #6552c7;
+}
+
+.subject-number {
+  color: #6552c7;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subject-card h6 {
+  margin-top: 15px;
+}
+
+/* Placement */
+
+.placement-section {
+  background: #f5f4fc;
+}
+
+.placement-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.placement-item {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.placement-item span {
+  color: #6552c7;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+/* Final CTA */
+
+.final-cta {
+  background: #282268;
+  color: white;
+}
+
+.final-cta h2 {
+  max-width: 750px;
+  margin: auto;
+}
+
+/* Modal */
+
+.custom-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 15px;
+}
+
+.custom-modal {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  animation: popup 0.3s ease;
+}
+
+.success-icon {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #d8f8e5;
+  color: #159447;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin: 0 auto 20px;
+}
+
+.custom-modal h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    padding: 65px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+  }
+
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .hero-card {
+    margin-top: 20px;
+  }
+
+}
